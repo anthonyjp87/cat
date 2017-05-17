@@ -64,9 +64,6 @@ for i in range(len(tables)):
 c.execute("SELECT SUM(TP) from analyzed_article")
 S = c.fetchone()
 print("Accuracy " +str(S[0]/float(N[0])))
-	# FP = 3-TP
-	# print("Precision " + str(TP/float(FP)))
-	# print("Accuracy " + str(TP/float(N[0])))
 
 
 
