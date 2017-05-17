@@ -13,9 +13,9 @@ This code also uses the categories given by the training dataset and not additio
 
 Dog.py: this program was initially written to read through the test data and compare it to the training data. However, once I built it I realized I needed to have dog.py’s methods also work to analyze new training data and compare the results against the given categories. This program does both though it should probably only do one or the other, or possibly have a variable set to determine which mode to run in. Currently it’s managed by commenting the ‘other’ code that you don’t want to run, which is probably not industry standard. Strip is the same as in cat.py, so perhaps I should not have copied the code here but I was thinking I would need different versions for the training and test data which proved to not be true. The majority of this program takes place in the check table and the inc table which checks the tokens from a test article against the training db and adds results to the test db. While this works, it’s fairly flawed as it does not take into account the prominence of tokens in a target article and as mentioned before, tests these tokens against all categories. 
 
-Scoop.py analyzes all categories that have been assigned to an article and turns the ‘actual’ to true for the highest categories. 
+Scoop.py analyzes all categories that have been assigned to an article and turns the ‘actual’ to true for the highest categories. It also calculates accuracy. I would like to have this code analyze a lot more.
 
-Send.py looks at the test database after scoup.py has run and generates a DB to submit in the correct format. 
+Send.py looks at the test database after scoop.py has run and generates a DB to submit in the correct format. It is all uninteresting code but it was fun to sort this all out.
 
 
 Wrap-up: 
