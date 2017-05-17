@@ -21,7 +21,6 @@ c = conn.cursor()
 conn2 =sqlite3.connect('train_data.db')
 c2 = conn2.cursor()
 
-#Why the fuck is this going into a list? 
 c2.execute("SELECT name FROM sqlite_master WHERE type='table';")
 tables =[c2.fetchall()]
 
@@ -124,7 +123,7 @@ def inc_table(topic, article):
 
 			
 
-##OPEN TEST DATA!! don't fuck with this code. 
+##OPEN TEST DATA DONT FUCK WITH THIS CODE. 
 f=open("TestData.json","r")
 s=f.read()
 book = json.loads(s)
